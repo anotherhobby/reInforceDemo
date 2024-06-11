@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: "2010-09-09"
-Description: IAM452 Sample CloudFormation
+Description: IAM452 Sample CloudFormation Role
 Resources:
   EC2Role:
     Type: AWS::IAM::Role
