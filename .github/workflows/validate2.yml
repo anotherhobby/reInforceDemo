@@ -28,7 +28,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ secrets.OIDC_IAM_ROLE }}
-          aws-region: <AWSRegion>
+          aws-region: us-east-2
           role-session-name: GitHubSessionName
         
       - name: Fetch reference policy from s3
@@ -45,4 +45,4 @@ jobs:
           template-path: './sample-role.yaml'
           reference-policy: './reference-identity-policy.json'
           reference-policy-type: "IDENTITY"
-          region: <AWSRegion>
+          region: us-east-2
