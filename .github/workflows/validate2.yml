@@ -27,7 +27,7 @@ jobs:
         id: configureCreds
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: ${{ secrets.OIDC_IAM_ROLE }}
+          role-to-assume: arn:aws:iam::227579795529:role/IAM452OidcRole
           aws-region: us-east-2
           role-session-name: GitHubSessionName
         
